@@ -27,7 +27,8 @@
   },
 	"husky": {
 		"hooks": {
-			"pre-commit": "echo 'USING HUSKY PRE-COMMIT WITH MESSAGE' & exit 1"
+			"pre-commit": "echo 'USING HUSKY PRE-COMMIT WITH MESSAGE' & exit 0 # exit 1 to fail commit",
+			"prepare-commit-msg": "echo $1 # print location?"
 		}
 	}
 }
