@@ -27,7 +27,7 @@
   },
 	"husky": {
 		"hooks": {
-			"pre-commit": "echo 'USING HUSKY PRE-COMMIT WITH MESSAGE' & exit 0"
+			"pre-commit": "echo 'USING HUSKY PRE-COMMIT WITH MESSAGE' & exit 1"
 		}
 	}
 }
