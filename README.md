@@ -12,6 +12,8 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
 
 ## Notes
 
+ - `npm version <major|minor|patch>` in clean working directory will update package.json and create git commit and tag with version
+
  - Good command for getting current git branch: `git branch | grep \* | cut -d' ' -f2`
 
  - Simple way to push current branch to origin remote repo `git push --set-upstream origin \`git branch | grep \* | cut -d' ' -f2\``
