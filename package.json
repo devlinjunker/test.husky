@@ -1,0 +1,24 @@
+{
+  "name": "test.husky",
+  "version": "0.1.0",
+  "description": "testing husky githooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devlinjunker/test.husky.git"
+  },
+  "keywords": [
+    "husky",
+    "githooks",
+    "testing"
+  ],
+  "author": "devlin.junker@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devlinjunker/test.husky/issues"
+  },
+  "homepage": "https://github.com/devlinjunker/test.husky#readme"
+}
