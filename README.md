@@ -6,3 +6,8 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
 - pre-receive: Enforce project coding standards.
 - post-commit: Email/SMS team members of a new commit.
 - post-receive: Push the code to production.
+
+
+## Notes
+
+Good command for getting current git branch: `git branch | grep \* | cut -d' ' -f2`
