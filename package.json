@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/devlinjunker/test.husky/issues"
   },
-  "homepage": "https://github.com/devlinjunker/test.husky#readme"
+  "homepage": "https://github.com/devlinjunker/test.husky#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
 }
