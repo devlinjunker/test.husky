@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo $HUSKY_GIT_PARAMS;
+echo $1;
 echo $2;
 echo $3;
 
