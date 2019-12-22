@@ -40,7 +40,10 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
     - feature/ or feat/
     - fix/
     - chore/
-    - refactor(component) ?
+    - IDEAS:
+      - refactor(component) ?
+      - doc ?
+      - poc ? - proof of concept
 
  - Templates
     - commit.template config in repo to reference commit message template
@@ -54,12 +57,15 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
       - or request type if not present? (fix/feat/refactor/wip?)
 
  - Commit Message Template?
-    - wip/feature/fix/refactor(component) - look into other options in angular style
+    - wip/feature/fix/refactor(component)/doc - look into other options in angular style
 
  - After Commit Message:
     - Verify message contains component above and 7+ words
     - spell check?
     - don't test on wip
+
+ - After non-master/release commit
+    - check up to date with master and encourage rebase
 
  - On Release branch commit? (release/X.XX)
     - increment patch version number and create tag after incremented 
