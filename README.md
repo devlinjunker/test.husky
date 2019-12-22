@@ -35,6 +35,15 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
   - Git action that checks PRs to be rebased off most recent master
   - more important when multiple contributors on a project
 
+ - Setting up branch protections
+    - https://github.com/devlinjunker/test.husky/settings/branches to add rules
+    - set up `master` rule for now
+      - Require pull request reviews before merging
+      - Require status checks to pass before merging
+        - Require branches to be up to date before merging
+      - Require linear history
+      - Include Administrators (for now at least for testing)
+
 ## Ideas
  - Github action to label PRs based on the branch name: https://github.com/TimonVS/pr-labeler-action
     - feature/ or feat/
