@@ -9,6 +9,7 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
 - post-receive: (on Remote Repo) Push the code to production
 - prepare-commit-message: help generate the commit message
 - post-checkout: called after checking out or clone (can be used to verify or display current details)
+- pre-merge-commit: called prior to merge commit, invoked by git merge (TODO: look into params) (used to prevent merge if desired)
 
 ## Notes
 
@@ -28,12 +29,18 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
  - githooks environment variables
   - https://longair.net/blog/2011/04/09/missing-git-hooks-documentation/
 
+ - Linear Git History
+  - https://www.bitsnbites.eu/a-tidy-linear-git-history/
+  - shouldn't merge from master (TODO: create githook that prevents this?)
+  - Git action that checks PRs to be rebased off most recent master
+  - more important when multiple contributors on a project
 
 ## Ideas
  - Github action to label PRs based on the branch name: https://github.com/TimonVS/pr-labeler-action
     - feature/ or feat/
     - fix/
     - chore/
+    - refactor(component) ?
 
  - Templates
     - commit.template config in repo to reference commit message template
@@ -44,11 +51,15 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
     - Lint
     - Compile
     - don't allow commits with -m option
+      - or request type if not present? (fix/feat/refactor/wip?)
 
  - Commit Message Template?
+    - wip/feature/fix/refactor(component) - look into other options in angular style
 
  - After Commit Message:
-    - Verify message contains title and description
+    - Verify message contains component above and 7+ words
+    - spell check?
+    - don't test on wip
 
  - On Release branch commit? (release/X.XX)
     - increment patch version number and create tag after incremented 
@@ -59,10 +70,15 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
     - update docs
     - check for spec files (unless code file has header with `ignore-spec` command)
     - check for READMEs in directories
+    - semantic versioning based on git logs/merges to master? this is helpful for ci/cd I think
+      - Q: tagging each time?
+      - Q: what about -SNAPSHOT versioning?
 
  - Github Branch protections: https://help.github.com/en/github/administering-a-repository/enabling-branch-restrictions
     - no commits to master
     - local git hook on pre-push to prevent push to master
+      - create branch for PR at commit and revert master 
+      - ask type (fix/feat/refactor)
 
  - Remote Server with git repo can handle deployment
     - add git remote for environment
