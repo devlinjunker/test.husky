@@ -56,22 +56,20 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
 
  - Templates
     - commit.template config in repo to reference commit message template
+      - wip/feature/fix/refactor(component)/doc - look into other options in angular style
     - Github PR template
     - Github Issue template
 
  - Before all Commits:
     - Lint
     - Compile
-    - don't allow commits with -m option
-      - or request type if not present? (fix/feat/refactor/wip?)
-
- - Commit Message Template?
-    - wip/feature/fix/refactor(component)/doc - look into other options in angular style
+    - ~~Don't allow commits with -m option?~~
+      - or verify ~~request~~ type if not present? (fix/feat/refactor/wip?)
 
  - After Commit Message:
-    - Verify message contains component above and 7+ words
-    - spell check?
-    - don't test on wip
+    - Verify message contains component above and 5+ words
+    - TODO: spell check?
+    - don't test on wip?
 
  - After non-master/release commit
     - check up to date with master and encourage rebase
