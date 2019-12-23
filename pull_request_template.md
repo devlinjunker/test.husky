@@ -1,15 +1,15 @@
-**Description**
+## :grey_question: Description
 
 
-:heavy_check_mark: **Testing**
+## :heavy_check_mark: Testing
 Unit test cases, edge cases, e2e/automated testing, etc.  
 
-:memo: **Documentation**
+## :memo: Documentation
 [Links]() to readmes, files, wiki, issues, websites, etc.
 
-:bulb: **Issues**
+## :bulb: Issues
 N/A 
 
-:camera_flash: **Visuals:**
+## :camera_flash: Visuals
 TBD
 
