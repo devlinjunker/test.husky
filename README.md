@@ -27,13 +27,13 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
     - `.git/COMMIT_EDITMSG message` when using -m with `git commit` 
 
  - githooks environment variables
-  - https://longair.net/blog/2011/04/09/missing-git-hooks-documentation/
+    - https://longair.net/blog/2011/04/09/missing-git-hooks-documentation/
 
  - Linear Git History
-  - https://www.bitsnbites.eu/a-tidy-linear-git-history/
-  - shouldn't merge from master (TODO: create githook that prevents this?)
-  - Git action that checks PRs to be rebased off most recent master
-  - more important when multiple contributors on a project
+   - https://www.bitsnbites.eu/a-tidy-linear-git-history/
+   - shouldn't merge from master (TODO: create githook that prevents this?)
+   - Git action that checks PRs to be rebased off most recent master
+   - more important when multiple contributors on a project
 
  - Setting up branch protections
     - https://github.com/devlinjunker/test.husky/settings/branches to add rules
@@ -54,7 +54,7 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
       - doc ?
       - poc ? - proof of concept
 
- - Templates
+ - Templates [done]
     - commit.template config in repo to reference commit message template
       - wip/feature/fix/refactor(component)/doc - look into other options in angular style
     - Github PR template
