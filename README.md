@@ -60,7 +60,7 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
     - Github PR template
     - Github Issue template
       - These are a github specific thing that needs to be managed on there
-
+      - https://github.com/devlinjunker/test.husky/issues/templates/edit
  - Before all Commits:
     - Lint
     - Compile
