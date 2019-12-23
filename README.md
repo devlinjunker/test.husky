@@ -59,6 +59,7 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
       - wip/feature/fix/refactor(component)/doc - look into other options in angular style
     - Github PR template
     - Github Issue template
+      - These are a github specific thing that needs to be managed on there
 
  - Before all Commits:
     - Lint
