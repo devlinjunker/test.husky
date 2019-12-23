@@ -38,7 +38,7 @@ do
 
       # Has prefix to check
       if grep -q "$prefix" ".git-commit.types"; then
-        continue;
+        :
       else
         echo "
 
@@ -54,7 +54,7 @@ do
       fi 
 
       # TODO: Check number of words in message
-      if [[ $(echo $message | wc -w) -le 4 ]]; then
+      if [[ $(echo "$message" | wc -w) -le 4 ]]; then
         echo "
 
         Error: Message should be 5+ words (but really you should add as much detail as possible)
