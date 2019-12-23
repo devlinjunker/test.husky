@@ -1,4 +1,6 @@
 #! /bin/bash
+# Hook after commit message is set. Reviews the message for a prefix (containing a `:`) that is valid
+# Valid prefixes are defined in `./.git-config.types`
 
 values=`cat .git-commit.types | tr '\n' '|' | sed 's/.$//'`;
 first=true;

@@ -1,5 +1,5 @@
 #! /bin/bash
-
+# Githook that fires before message is received from user, we don't need this for now
 
 read -ra PARAM_ARRAY <<< "$HUSKY_GIT_PARAMS"
 
@@ -13,4 +13,3 @@ else
   echo $COMMIT_TYPE;
   # during `--amend` this will be empty
 fi
-
