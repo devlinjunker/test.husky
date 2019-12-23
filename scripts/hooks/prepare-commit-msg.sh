@@ -3,9 +3,13 @@
 
 read -ra PARAM_ARRAY <<< "$HUSKY_GIT_PARAMS"
 
-if [ "${PARAM_ARRAY[1]}" == "template" ]; then
+set COMMIT_TYPE = "${PARAM_ARRAY[1]}"
+
+if [ "$COMMIT_TYPE" == "template" ]; then
   echo "nothing?";
-elif [ "${PARAM_ARRAY[1]}" == "message" ]; then
+elif [ "$COMMIT_TYPE" == "message" ]; then
   echo "TODO: ask type and prefix message with it";
+else
+  echo $COMMIT_TYPE;
 fi
 
