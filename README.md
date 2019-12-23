@@ -27,13 +27,13 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
     - `.git/COMMIT_EDITMSG message` when using -m with `git commit` 
 
  - githooks environment variables
-  - https://longair.net/blog/2011/04/09/missing-git-hooks-documentation/
+    - https://longair.net/blog/2011/04/09/missing-git-hooks-documentation/
 
  - Linear Git History
-  - https://www.bitsnbites.eu/a-tidy-linear-git-history/
-  - shouldn't merge from master (TODO: create githook that prevents this?)
-  - Git action that checks PRs to be rebased off most recent master
-  - more important when multiple contributors on a project
+   - https://www.bitsnbites.eu/a-tidy-linear-git-history/
+   - shouldn't merge from master (TODO: create githook that prevents this?)
+   - Git action that checks PRs to be rebased off most recent master
+   - more important when multiple contributors on a project
 
  - Setting up branch protections
     - https://github.com/devlinjunker/test.husky/settings/branches to add rules
@@ -54,24 +54,22 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
       - doc ?
       - poc ? - proof of concept
 
- - Templates
+ - Templates [done]
     - commit.template config in repo to reference commit message template
+      - wip/feature/fix/refactor(component)/doc - look into other options in angular style
     - Github PR template
     - Github Issue template
 
  - Before all Commits:
     - Lint
     - Compile
-    - don't allow commits with -m option
-      - or request type if not present? (fix/feat/refactor/wip?)
-
- - Commit Message Template?
-    - wip/feature/fix/refactor(component)/doc - look into other options in angular style
+    - ~~Don't allow commits with -m option?~~
+      - or verify ~~request~~ type if not present? (fix/feat/refactor/wip?)
 
  - After Commit Message:
-    - Verify message contains component above and 7+ words
-    - spell check?
-    - don't test on wip
+    - Verify message contains component above and 5+ words
+    - TODO: spell check?
+    - don't test on wip?
 
  - After non-master/release commit
     - check up to date with master and encourage rebase
