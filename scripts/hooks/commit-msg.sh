@@ -2,7 +2,9 @@
 
 while IFS= read -r line;
 do
-  if [[ $line = #* ]]; then
+  if [[ $line = \#* ]]; then
+    continue;
+  elif [[ -z $line ]]; then
     continue;
   else
     echo "$line"
