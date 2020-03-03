@@ -66,6 +66,9 @@ Testing githooks, started with `pre-commit`, and then added script for `prepare-
     - Compile
     - ~~Don't allow commits with -m option?~~
       - or verify ~~request~~ type if not present? (fix/feat/refactor/wip?)
+ 
+ - Branch specific .git_ignores (maybe even prefix based?)
+    - https://gist.github.com/wizioo/c89847c7894ede628071
 
  - After Commit Message:
     - Verify message contains component above and 5+ words
